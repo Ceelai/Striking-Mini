@@ -1,6 +1,6 @@
 <template>
-    <span>
-        <v-navigation-drawer
+    <div>
+        <!--<v-navigation-drawer
             app
             v-model="drawer"
             :expand-on-hover="expandOnHover"
@@ -19,10 +19,11 @@
                 </template>
             </v-list>
         </v-navigation-drawer>
-        <v-toolbar color="grey darken-4" dark>
+        <v-toolbar color="">
             <v-app-bar-nav-icon
                 class="hidden-md-and-up"
-                @click="drawer = !drawer"></v-app-bar-nav-icon>
+                @click="drawer = !drawer"
+            ></v-app-bar-nav-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
             <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
             <v-btn class="hidden-sm-and-down">Varieties</v-btn>
@@ -31,8 +32,34 @@
             <v-btn color="grey lighten-3" class="hidden-sm-and-down"
                 >Join</v-btn
             >
+        </v-toolbar>-->
+        <v-navigation-drawer
+            app
+            v-model="drawer"
+            :expand-on-hover="expandOnHover"
+            class="grey darken-4"
+            dark
+            disable-resize-watcher
+        >
+            <v-list>
+                <template v-for="(item, index) in items">
+                    <v-list-item :key="index">
+                        <v-list-item-content>{{ item.title }}</v-list-item-content>
+                    </v-list-item>
+                    <v-divider :key="`divider-${index}`"></v-divider>
+                </template>
+            </v-list>
+        </v-navigation-drawer>
+        <v-toolbar color="grey darken-4" dark>
+            <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
+            <v-spacer class="hidden-md and up"></v-spacer>
+            <v-btn class="hidden-sm-and-down">The Chassis</v-btn>
+            <v-toolbar-title class>{{ appTitle }}</v-toolbar-title>
+            <v-spacer class="hidden-sm-and-down"></v-spacer>
+            <v-btn class="hidden-sm-and-down">SIGN IN</v-btn>
+            <v-btn color="grey lighten-3" class="hidden-sm-and-down">Join</v-btn>
         </v-toolbar>
-    </span>
+    </div>
 </template>
 
 <script>
@@ -44,7 +71,7 @@ export default {
             drawer: false,
             expandOnHover: false,
             items: [
-                { title: 'Varieties' },
+                { title: 'The Chassis' },
                 { title: 'Sign In' },
                 { title: 'Join' }
             ]
@@ -53,4 +80,5 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>
