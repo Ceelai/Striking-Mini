@@ -1,18 +1,17 @@
 <template>
-    <div class="home">
-        <img alt="Striking Mini" src="../assets/logo.png" />
-        <AppNavigation />
-    </div>
+  <span>
+    <landing-hero></landing-hero>
+  </span>
 </template>
 
 <script>
 // @ is an alias to /src
-import AppNavigation from '@/components/AppNavigation.vue';
+import LandingHero from "@/components/LandingHero.vue";
 
 export default {
-    name: 'Home',
-    components: {
-        AppNavigation
-    }
+  name: "Home",
+  components: {
+    LandingHero
+  }
 };
 </script>

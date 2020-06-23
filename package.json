@@ -49,8 +49,6 @@
     "rules": {}
   },
   "prettier": {
-    "tabWidth": 4,
-    "singleQuote": true
   },
   "postcss": {
     "plugins": {
