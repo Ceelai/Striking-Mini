@@ -4,7 +4,6 @@
       <v-col cols="12" class="pa-0 landing-hero">
         <v-row>
           <v-col offset-sm="1" cols="4" class="square pa-5">
-            <!--<div class="text-h2 white--text mainfont text-lg-center">Mighty but Mini.</div>-->
             <div class="white--text mainfont text-sm-center">Mighty</div>
             <div class="white--text mainfont text-sm-center">but</div>
             <div class="white--text mainfont text-sm-center">Mini.</div>
@@ -27,9 +26,12 @@ export default {
 <style lang="scss" scoped>
 @import "../sass/variables.scss";
 
+body{
+  overflow: hidden !important;
+}
+
 .landing-hero {
   background: url("../assets/mini-landingpage.jpg");
-  height: 100vh;
   max-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -38,6 +40,7 @@ export default {
 .nopad {
   padding: 0;
   max-height: 100vh;
+  overflow: hidden;
 }
 
 .main {
