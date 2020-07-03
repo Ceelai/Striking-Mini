@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 a {
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 </style>
