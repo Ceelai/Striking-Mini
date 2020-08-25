@@ -1,15 +1,35 @@
 <template>
-  <v-container fluid fill-height class="nopad">
-    <v-row class="main">
-      <v-col cols="12" class="pa-0 landing-hero">
-        <v-row>
-          <v-col offset-sm="1" cols="4" class="square pa-5">
-            <div class="white--text mainfont text-sm-center">Mighty</div>
-            <div class="white--text mainfont text-sm-center">but</div>
-            <div class="white--text mainfont text-sm-center">Mini.</div>
-          </v-col>
-        </v-row>
+  <v-container class="container pa-0">
+   <!-- <v-toolbar dense flat>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-toolbar-title>Mini</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-heart</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-dots-vertical</v-icon>
+      </v-btn>
+    </v-toolbar>-->
+    <v-row>
+      <v-col cols="6" class="d-flex flex-column herotext pb-16">
+        <div class="text-h6 font-weight-regular">Austin x Morris x Rover.</div>
+        <div class="text-h1 font-weight-light">Mighty but Mini.</div>
+        <div class="body-2 call-action">
+          An editorial-esque vue.js webpage dedicated to one of the greatest
+          automobile designs in history.
+        </div>
+        <v-btn class="ma-3" max-width="150px" small>Learn More</v-btn>
+        
       </v-col>
+      <v-col cols="1" class="landing-right"></v-col>
+      <v-col cols="4" class="d-flex flex-column landing-right">
+        <v-img class="landing-image" contain src="../assets/mini1.jpg"></v-img>
+      </v-col>
+      <v-col cols="1" class="landing-right"></v-col>
     </v-row>
   </v-container>
 </template>
@@ -24,38 +44,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../sass/variables.scss";
-
-body{
-  overflow: hidden !important;
-}
-
-.landing-hero {
-  background: url("../assets/mini-landingpage.jpg");
+.landing-right {
+  background-color: #dfcab9;
   max-height: 100vh;
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
 }
 
-.nopad {
-  padding: 0;
-  max-height: 100vh;
-  overflow: hidden;
+.herotext {
+  align-self: auto;
+  justify-content: center;
 }
 
-.main {
-  height: 100%;
+.call-action {
+  color: #6a6161;
+  font-size: 21px;
+}
+
+.landing-image {
+  width: 100%;
   max-height: 100vh;
 }
-
-.square {
-  background-color: rgb(112, 112, 112);
-  opacity: 78%;
-}
-
-.mainfont {
-  font-family: $heading-font-family !important;
-  font-size: 4vw !important;
-  line-height: none !important;
+.container {
+  max-height: inherit;
 }
 </style>

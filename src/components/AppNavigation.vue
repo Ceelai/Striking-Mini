@@ -18,8 +18,11 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar color="grey darken-4" elevate-on-scroll dark>
-      <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar color="" elevate-on-scroll>
+      <v-app-bar-nav-icon
+        class="hidden-md-and-up"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
       <v-spacer class="hidden-md and up"></v-spacer>
       <router-link to="/">
         <v-toolbar-title class>{{ appTitle }}</v-toolbar-title>
@@ -47,9 +50,4 @@ export default {
 };
 </script>
 
-<style scoped>
-a {
-  color: white !important;
-  text-decoration: none;
-}
-</style>
+<style scoped></style>
