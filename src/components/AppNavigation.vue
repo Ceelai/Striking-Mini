@@ -1,39 +1,21 @@
 <template>
-  <div>
-    <v-navigation-drawer
-      app
-      v-model="drawer"
-      :expand-on-hover="expandOnHover"
-      class="grey darken-4"
-      dark
-    >
-      <v-list>
-        <template v-for="(item, index) in items">
-          <v-list-item :key="index">
-            <v-list-item-content>
-              <v-btn text>{{ item.title }}</v-btn>
-            </v-list-item-content>
-          </v-list-item>
-          <v-divider :key="`divider-${index}`"></v-divider>
-        </template>
-      </v-list>
-    </v-navigation-drawer>
-    <v-app-bar color="" elevate-on-scroll>
-      <v-app-bar-nav-icon
-        class="hidden-md-and-up"
-        @click="drawer = !drawer"
-      ></v-app-bar-nav-icon>
-      <v-spacer class="hidden-md and up"></v-spacer>
-      <router-link to="/">
-        <v-toolbar-title class>{{ appTitle }}</v-toolbar-title>
-      </router-link>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn text to="/thecar">The Car</v-btn>
-        <v-btn text to="/variations">Variations</v-btn>
-      </v-toolbar-items>
-      <v-spacer class="hidden-md and up"></v-spacer>
-    </v-app-bar>
-  </div>
+  <v-toolbar desne flat>
+    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-toolbar-title>{{appTitle}}</v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-btn icon to="/thecar">
+      <v-icon>mdi-car</v-icon>
+    </v-btn>
+    <!--<v-btn icon>
+      <v-icon>mdi-magnify</v-icon>
+    </v-btn>
+    <v-btn icon>
+      <v-icon>mdi-heart</v-icon>
+    </v-btn>-->
+    <v-btn icon>
+      <v-icon>mdi-dots-vertical</v-icon>
+    </v-btn>
+  </v-toolbar>
 </template>
 
 <script>
@@ -41,7 +23,7 @@ export default {
   name: "AppNavigation",
   data() {
     return {
-      appTitle: "Striking Mini",
+      appTitle: "Mini",
       drawer: false,
       expandOnHover: false,
       items: [{ title: "The Car" }, { title: "Variations" }, { title: "Join" }]
@@ -50,4 +32,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.v-toolbar {
+  flex: none;
+}
+</style>
