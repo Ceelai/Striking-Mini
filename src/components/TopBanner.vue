@@ -1,29 +1,78 @@
+/* eslint-disable prettier/prettier */
 <template>
-  <v-container class="container pa-0">
+  <v-container class="container">
     <v-row class="top-banner">
-      <v-col cols="6" md="6" class="">
+      <v-col cols="12" class>
         <div
-          class="text-h4 pb-2 text-center font-weight-light"
+          class="text-h4 pb-2 mt-12 text-center font-weight-light"
         >The Story Behind Classic Mini (1959 - 2000)</div>
       </v-col>
-      <v-col cols="6" class="" sm="6"></v-col>
     </v-row>
-    <v-row class>
-      <v-col cols="6">
-        <div class="text-subtitle-2 pt-2">
-          For over 60 years, Mini has remained as one of the most iconic cars in automobile history. Alec Issigonis,
-          the original designer of the mini,
-          set out to create a vehicle capable of seating 4 adults while maintaining a high fuel economy.
-          Produced by multiple manufactures over its 60 year history,
-          the Classic Mini's aesthetic did not change drastically from the original 1960 models.
-          Mini went through multiple iterations that included several engine options,
-          later models even included airbags and air conditioning.
+    <v-row class="top-banner">
+      <v-col cols="3" lg></v-col>
+      <v-col cols="6" class>
+        <div class="pt-2 mb-12 text-subtitle-2">
+          For over 60 years, Mini has remained as one of the most iconic cars in
+          automobile history. Alec Issigonis, the original designer of the mini,
+          set out to create a vehicle capable of seating 4 adults while
+          maintaining a high fuel economy. Produced by multiple manufactures
+          over its 60 year history, the Classic Mini's aesthetic did not change
+          drastically from the original 1960 models. Mini went through multiple
+          iterations that included several engine options, later models even
+          included airbags and air conditioning.
         </div>
       </v-col>
+      <v-col cols="3" lg></v-col>
+    </v-row>
+
+    <v-row class="pt-10">
+      <v-col cols="2"></v-col>
+      <v-col cols="2">
+        <v-row>
+          <v-img class="left-image" contain src="../assets/classic-mini.jpg"></v-img>
+        </v-row>
+        <v-row class="text-h5 text-center pt-4" justify="center">Nimble but Extremely Fun</v-row>
+        <v-row class="pt-8 text-subtitle-2 text-center">
+          With the wheels placed in the furthest corners of the chassis, the
+          handling of the Classic Mini is the most go-kart experience in any
+          road legal motor vehicle thanks to its lightweight and small size. The
+          Classic Mini is one of the worlds first motor vehicles to use a space
+          saving transverse engine that allowed for a front-wheel drive layout.
+          This allowed 80% of the cars entire floorpan to be used for passengers
+          and cargo.
+        </v-row>
+      </v-col>
+      <v-col cols="1"></v-col>
+      <v-col cols="2">
+        <v-row>
+          <v-img class="center-image" contain src="../assets/whiteredmini.jpg"></v-img>
+        </v-row>
+        <v-row class="text-h5" justify="center">Retro Modern Aesthetic</v-row>
+        <v-row class="pt-8 text-subtitle-2 text-center">
+          The Classic Mini is one of the most recognizable vehicles in history
+          with available add-ons such as rally inspired fog-lights, wide wheel
+          fenders and racing stripes. Every Mini is different and none of them
+          are the same. Keeping with the classic look of chrome, the aesthetic
+          of the Classic Mini turns heads no matter the configuration.
+        </v-row>
+      </v-col>
+      <v-col cols="1"></v-col>
+      <v-col cols="2">
+        <v-row>
+          <v-img class="right-image" contain src="../assets/citycarmini.jpg"></v-img>
+        </v-row>
+        <v-row class="text-h5" justify="center">The Spirit of Driving</v-row>
+        <v-row class="pt-8 text-subtitle-2 text-center">
+          Paying homage to the raw and mechanical driving feel of the Classic
+          Mini. From the un-conventional driving position, to the lack of
+          eletronics that come with the territory, are some of the primary
+          reasons the Classic Mini reigns surpreme even till this day.
+        </v-row>
+      </v-col>
+      <v-col cols="2"></v-col>
     </v-row>
   </v-container>
 </template>
-
 
 <script>
 export default {
@@ -32,13 +81,13 @@ export default {
     return {};
   }
 };
-
-
 </script>
 
 <style scoped lang="scss">
 .top-banner {
   //max-height: 800px !important;
+  background-color: black;
+  color: white;
 }
 
 .container {
@@ -48,4 +97,6 @@ export default {
 .v-toolbar {
   flex: none !important;
 }
+
+
 </style>

@@ -8,7 +8,7 @@
           An editorial-esque vue.js webpage dedicated to one of the greatest
           automobile designs in history.
         </div>
-        <v-btn class="ma-3" max-width="150px" href="" small>Learn More</v-btn>
+        <v-btn class="ma-3" max-width="150px" href="TheCar" small>Learn More</v-btn>
       </v-col>
       <v-col cols="1" class="landing-right"></v-col>
       <v-col cols="4" class="d-flex flex-column landing-right">
