@@ -2,36 +2,42 @@
 <template>
   <v-container class="container">
     <v-row class="top-banner">
-      <v-col cols="12" class>
+      <v-col cols="12" align-self="center" class="">
         <div
-          class="text-h4 pb-2 mt-12 text-center font-weight-light"
-        >The Story Behind Classic Mini (1959 - 2000)</div>
-      </v-col>
-    </v-row>
-    <v-row class="top-banner">
-      <v-col cols="3" lg></v-col>
-      <v-col cols="6" class>
-        <div class="pt-2 mb-12 text-subtitle-2">
-          For over 60 years, Mini has remained as one of the most iconic cars in
-          automobile history. Alec Issigonis, the original designer of the mini,
-          set out to create a vehicle capable of seating 4 adults while
-          maintaining a high fuel economy. Produced by multiple manufactures
-          over its 60 year history, the Classic Mini's aesthetic did not change
-          drastically from the original 1960 models. Mini went through multiple
-          iterations that included several engine options, later models even
-          included airbags and air conditioning.
+          class="text-lg-h4 text-xl-h4 text-md-h6 text-sm-h6 text-xs-h6 text-center font-weight-light"
+        >
+          The Story Behind Classic Mini (1959 - 2000)
         </div>
+        <v-col
+          class="col-sm-12 col-xs-12 col-lg-6 col-xl-6 col-md-6 offset-md-3 offset-lg-3 offset-xl-3"
+        >
+          <div class="body-2">
+            For over 60 years, Mini has remained as one of the most iconic cars
+            in automobile history. Alec Issigonis, the original designer of the
+            mini, set out to create a vehicle capable of seating 4 adults while
+            maintaining a high fuel economy. Produced by multiple manufactures
+            over its 60 year history, the Classic Mini's aesthetic did not
+            change drastically from the original 1960 models. Mini went through
+            multiple iterations that included several engine options, later
+            models even included airbags and air conditioning.
+          </div>
+        </v-col>
       </v-col>
-      <v-col cols="3" lg></v-col>
     </v-row>
 
     <v-row class="pt-10">
       <v-col cols="2"></v-col>
       <v-col cols="2">
         <v-row>
-          <v-img class="left-image" contain src="../assets/classic-mini.jpg"></v-img>
+          <v-img
+            class="left-image"
+            contain
+            src="../assets/classic-mini.jpg"
+          ></v-img>
         </v-row>
-        <v-row class="text-h5 text-center pt-4" justify="center">Nimble but Extremely Fun</v-row>
+        <v-row class="text-h5 text-center pt-4" justify="center"
+          >Nimble but Extremely Fun</v-row
+        >
         <v-row class="pt-8 text-subtitle-2 text-center">
           With the wheels placed in the furthest corners of the chassis, the
           handling of the Classic Mini is the most go-kart experience in any
@@ -45,7 +51,11 @@
       <v-col cols="1"></v-col>
       <v-col cols="2">
         <v-row>
-          <v-img class="center-image" contain src="../assets/whiteredmini.jpg"></v-img>
+          <v-img
+            class="center-image"
+            contain
+            src="../assets/whiteredmini.jpg"
+          ></v-img>
         </v-row>
         <v-row class="text-h5" justify="center">Retro Modern Aesthetic</v-row>
         <v-row class="pt-8 text-subtitle-2 text-center">
@@ -59,7 +69,11 @@
       <v-col cols="1"></v-col>
       <v-col cols="2">
         <v-row>
-          <v-img class="right-image" contain src="../assets/citycarmini.jpg"></v-img>
+          <v-img
+            class="right-image"
+            contain
+            src="../assets/citycarmini.jpg"
+          ></v-img>
         </v-row>
         <v-row class="text-h5" justify="center">The Spirit of Driving</v-row>
         <v-row class="pt-8 text-subtitle-2 text-center">
@@ -85,9 +99,10 @@ export default {
 
 <style scoped lang="scss">
 .top-banner {
-  //max-height: 800px !important;
   background-color: black;
   color: white;
+
+  justify-self: center;
 }
 
 .container {
@@ -97,6 +112,4 @@ export default {
 .v-toolbar {
   flex: none !important;
 }
-
-
 </style>
