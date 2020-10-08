@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 <template>
   <v-container class="container">
     <v-row class="top-banner">
@@ -25,9 +24,9 @@
       </v-col>
     </v-row>
 
-    <v-row class="pt-10">
-      <v-col cols="2"></v-col>
-      <v-col cols="2">
+    <v-row class="">
+      <v-col class="col-lg-1"></v-col>
+      <v-col class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12 ">
         <v-row>
           <v-img
             class="left-image"
@@ -35,9 +34,8 @@
             src="../assets/classic-mini.jpg"
           ></v-img>
         </v-row>
-        <v-row class="text-h5 text-center pt-4" justify="center"
-          >Nimble but Extremely Fun</v-row
-        >
+        <v-row class="text-h5 text-center" justify="center"
+          >Nimble but Extremely Fun</v-row>
         <v-row class="pt-8 text-subtitle-2 text-center">
           With the wheels placed in the furthest corners of the chassis, the
           handling of the Classic Mini is the most go-kart experience in any
@@ -48,8 +46,8 @@
           and cargo.
         </v-row>
       </v-col>
-      <v-col cols="1"></v-col>
-      <v-col cols="2">
+        <v-col class="col-lg-2"></v-col>
+      <v-col  class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12  ">
         <v-row>
           <v-img
             class="center-image"
@@ -66,8 +64,8 @@
           of the Classic Mini turns heads no matter the configuration.
         </v-row>
       </v-col>
-      <v-col cols="1"></v-col>
-      <v-col cols="2">
+        <v-col class="col-lg-2"></v-col>
+      <v-col  class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12 ">
         <v-row>
           <v-img
             class="right-image"
@@ -83,7 +81,7 @@
           reasons the Classic Mini reigns surpreme even till this day.
         </v-row>
       </v-col>
-      <v-col cols="2"></v-col>
+        <v-col class="col-lg-1 "></v-col>
     </v-row>
   </v-container>
 </template>
