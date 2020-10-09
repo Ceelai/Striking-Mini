@@ -23,13 +23,11 @@
         </v-col>
       </v-col>
     </v-row>
-    <v-row
-      class="text-lg-h4 text-xl-h4 text-md-h6 text-sm-h6 text-xs-h6 text-center font-weight-light text-decoration-underline"
-      align-self="center"
-      justify-content="center"
-    >
-      What's so special?
-    </v-row>
+    <div
+          class="pt-8 pb-8 text-lg-h4 text-xl-h4 text-md-h6 text-sm-h6 text-xs-h6 text-center font-weight-light text-decoration-underline" align-content="center" justify-content="center"
+        >
+          What's So Special?
+        </div>
     <v-row class="">
       <v-col class="col-lg-1"></v-col>
       <v-col class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12 ">
@@ -37,7 +35,7 @@
           <v-img
             class="left-image"
             contain
-            src="../assets/classic-mini.jpg"
+            src="@/assets/classic-mini.jpg"
           ></v-img>
         </v-row>
         <v-row class="text-h5 text-center" justify="center"
@@ -59,7 +57,7 @@
           <v-img
             class="center-image"
             contain
-            src="../assets/whiteredmini.jpg"
+            src="@/assets/whiteredmini.jpg"
           ></v-img>
         </v-row>
         <v-row class="text-lg-h5 text-center" justify="center"
@@ -79,13 +77,13 @@
           <v-img
             class="right-image"
             contain
-            src="../assets/citycarmini.jpg"
+            src="@/assets/citycarmini.jpg"
           ></v-img>
         </v-row>
         <v-row class="text-lg-h5 text-center" justify="center"
           >The Spirit of Driving</v-row
         >
-        <v-row class="pt-8 text-body-2 text-center">
+        <v-row class="pt-8 text-body-2" justify="center">
           Paying homage to the raw and mechanical driving feel of the Classic
           Mini. From the un-conventional driving position, to the lack of
           eletronics that come with the territory, are some of the primary
@@ -101,7 +99,24 @@
 export default {
   name: "TheCar",
   data() {
-    return {};
+    return {
+      slidestext: [
+        "Nimble but Extremely Fun",
+        "Retro Modern Aesthetic",
+        "The Spirit of Driving"
+      ],
+      slideimages: [
+        {
+          src: "@/assets/classic-mini.jpg"
+        },
+        {
+          src: "@/assets/whiteredmini.jpg"
+        },
+        {
+          src: "@/assets/citycarmini.jpg"
+        }
+      ]
+    };
   }
 };
 </script>
