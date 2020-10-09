@@ -3,7 +3,7 @@
     <v-row class="top-banner">
       <v-col cols="12" align-self="center" class="">
         <div
-          class="text-lg-h4 text-xl-h4 text-md-h6 text-sm-h6 text-xs-h6 text-center font-weight-light"
+          class="text-lg-h4 text-xl-h4 text-md-h6 text-sm-h6 text-xs-h6 text-center font-weight-light text-decoration-underline"
         >
           The Story Behind Classic Mini (1959 - 2000)
         </div>
@@ -23,7 +23,13 @@
         </v-col>
       </v-col>
     </v-row>
-
+    <v-row
+      class="text-lg-h4 text-xl-h4 text-md-h6 text-sm-h6 text-xs-h6 text-center font-weight-light text-decoration-underline"
+      align-self="center"
+      justify-content="center"
+    >
+      What's so special?
+    </v-row>
     <v-row class="">
       <v-col class="col-lg-1"></v-col>
       <v-col class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12 ">
@@ -35,8 +41,9 @@
           ></v-img>
         </v-row>
         <v-row class="text-h5 text-center" justify="center"
-          >Nimble but Extremely Fun</v-row>
-        <v-row class="pt-8 text-subtitle-2 text-center">
+          >Nimble but Extremely Fun</v-row
+        >
+        <v-row class="pt-8 text-body-2 text-center">
           With the wheels placed in the furthest corners of the chassis, the
           handling of the Classic Mini is the most go-kart experience in any
           road legal motor vehicle thanks to its lightweight and small size. The
@@ -46,8 +53,8 @@
           and cargo.
         </v-row>
       </v-col>
-        <v-col class="col-lg-2"></v-col>
-      <v-col  class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12  ">
+      <v-col class="col-lg-2"></v-col>
+      <v-col class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12  ">
         <v-row>
           <v-img
             class="center-image"
@@ -55,17 +62,19 @@
             src="../assets/whiteredmini.jpg"
           ></v-img>
         </v-row>
-        <v-row class="text-h5" justify="center">Retro Modern Aesthetic</v-row>
-        <v-row class="pt-8 text-subtitle-2 text-center">
+        <v-row class="text-lg-h5 text-center" justify="center"
+          >Retro Modern Aesthetic</v-row
+        >
+        <v-row class="pt-8 text-body-2 text-center">
           The Classic Mini is one of the most recognizable vehicles in history
           with available add-ons such as rally inspired fog-lights, wide wheel
-          fenders and racing stripes. Every Mini is different and none of them
-          are the same. Keeping with the classic look of chrome, the aesthetic
-          of the Classic Mini turns heads no matter the configuration.
+          fenders and racing stripes. Keeping with the classic look of chrome,
+          the aesthetic of the Classic Mini turns heads no matter the
+          configuration.
         </v-row>
       </v-col>
-        <v-col class="col-lg-2"></v-col>
-      <v-col  class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12 ">
+      <v-col class="col-lg-2"></v-col>
+      <v-col class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12 ">
         <v-row>
           <v-img
             class="right-image"
@@ -73,15 +82,17 @@
             src="../assets/citycarmini.jpg"
           ></v-img>
         </v-row>
-        <v-row class="text-h5" justify="center">The Spirit of Driving</v-row>
-        <v-row class="pt-8 text-subtitle-2 text-center">
+        <v-row class="text-lg-h5 text-center" justify="center"
+          >The Spirit of Driving</v-row
+        >
+        <v-row class="pt-8 text-body-2 text-center">
           Paying homage to the raw and mechanical driving feel of the Classic
           Mini. From the un-conventional driving position, to the lack of
           eletronics that come with the territory, are some of the primary
           reasons the Classic Mini reigns surpreme even till this day.
         </v-row>
       </v-col>
-        <v-col class="col-lg-1 "></v-col>
+      <v-col class="col-lg-1 "></v-col>
     </v-row>
   </v-container>
 </template>

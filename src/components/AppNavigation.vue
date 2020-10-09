@@ -20,7 +20,7 @@ export default {
       appTitle: "Mini",
       drawer: false,
       expandOnHover: false,
-      items: [{ title: "The Car" }, { title: "" }, { title: "" }]
+      items: []
     };
   }
 };

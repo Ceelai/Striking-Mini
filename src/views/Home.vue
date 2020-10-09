@@ -2,6 +2,7 @@
   <span>
     <landing-hero></landing-hero>
     <top-banner></top-banner>
+    <types></types>
   </span>
 </template>
 
@@ -9,12 +10,13 @@
 // @ is an alias to /src
 import LandingHero from "@/components/LandingHero.vue";
 import TopBanner from "@/components/TopBanner.vue";
-
+import Types from "@/components/Types.vue";
 export default {
   name: "Home",
   components: {
     LandingHero,
-    TopBanner
+    TopBanner,
+    Types
   }
 };
 </script>
