@@ -1,24 +1,31 @@
 <template>
-  <v-container class="container">
+  <v-container>
     <v-row>
-      <v-col class="herotext col-lg-6 col-xl-6 col-md-6 col-xs-12 col-sm-6">
+      <v-col class="herotext col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
         <div class="text-h6 font-weight-regular">Austin x Morris x Rover.</div>
         <div class="caption font-weight-regular">Just Mini.</div>
         <div
           class="text-md-h1 text-lg-h1 text-xl-h1 text-sm-h2 text-h4  font-weight-light"
-        >Mighty but Mini.
+        >
+          Mighty but Mini.
         </div>
-        
+
         <div class="body-2 pt-3 call-action">
           An editorial-esque vue.js webpage dedicated to one of the greatest
           automobile designs in history.
         </div>
-        <v-btn class="mt-3" max-width="150px" href="TheCar" small
+        <v-btn
+          class="mt-3 justify-center align-center"
+          max-width="150px"
+          href="TheCar"
+          small
           >Learn More</v-btn
         >
       </v-col>
 
-      <v-col class="flex-column mobile-hide landing-right col-lg-6 col-xl-6 col-md-6 col-xs-12 col-sm-6">
+      <v-col
+        class="flex-column mobile-hide landing-right col-lg-6 col-xl-6 col-md-6 col-sm-6"
+      >
         <v-img class="landing-image" contain src="../assets/mini1.jpg"></v-img>
       </v-col>
     </v-row>
@@ -57,18 +64,15 @@ export default {
 .landing-image {
   max-height: 50vh;
 }
-.container {
-  max-height: inherit;
-}
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .mobile-hide {
     display: none;
   }
 
-  .herotext{
+  .herotext {
     text-align: center;
+    padding-top: 25vh;
   }
-
 }
 </style>
