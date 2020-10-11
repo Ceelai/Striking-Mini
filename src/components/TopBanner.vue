@@ -1,7 +1,38 @@
 <template>
   <v-container class="container">
+    <div
+      class="pt-16 pb-16 text-lg-h4 text-xl-h4 text-md-h6 text-sm-h6 text-xs-h6 text-center font-weight-light text-decoration-underline"
+      align-content="center"
+      justify-content="center"
+    >
+      What's So Special?
+    </div>
+    <v-container>
+      <v-row
+        dense
+        class="text-xl-h4 text-lg-h4 text-md-h6 text-sm-h6 text-xs-h6"
+      >
+        <v-col
+          class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12"
+          v-for="card in cards"
+          :key="card.title"
+        >
+          <v-card>
+            <v-img
+              :src="require(`@/assets/${card.src}`)"
+              class="white--text align-end rounded"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="400px"
+              aspect-ratio=""
+            >
+              <v-card-title v-text="card.title"></v-card-title>
+            </v-img>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
     <v-row class="top-banner">
-      <v-col cols="12" align-self="center" class="">
+      <v-col cols="12" align-self="center" class="pa-16">
         <div
           class="text-lg-h4 text-xl-h4 text-md-h6 text-sm-h6 text-xs-h6 text-center font-weight-light text-decoration-underline"
         >
@@ -23,101 +54,19 @@
         </v-col>
       </v-col>
     </v-row>
-    <div
-          class="pt-8 pb-8 text-lg-h4 text-xl-h4 text-md-h6 text-sm-h6 text-xs-h6 text-center font-weight-light text-decoration-underline" align-content="center" justify-content="center"
-        >
-          What's So Special?
-        </div>
-    <v-row class="">
-      <v-col class="col-lg-1"></v-col>
-      <v-col class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12 ">
-        <v-row>
-          <v-img
-            class="left-image"
-            contain
-            src="@/assets/classic-mini.jpg"
-          ></v-img>
-        </v-row>
-        <v-row class="text-h5 text-center" justify="center"
-          >Nimble but Extremely Fun</v-row
-        >
-        <v-row class="pt-8 text-body-2 text-center">
-          With the wheels placed in the furthest corners of the chassis, the
-          handling of the Classic Mini is the most go-kart experience in any
-          road legal motor vehicle thanks to its lightweight and small size. The
-          Classic Mini is one of the worlds first motor vehicles to use a space
-          saving transverse engine that allowed for a front-wheel drive layout.
-          This allowed 80% of the cars entire floorpan to be used for passengers
-          and cargo.
-        </v-row>
-      </v-col>
-      <v-col class="col-lg-2"></v-col>
-      <v-col class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12  ">
-        <v-row>
-          <v-img
-            class="center-image"
-            contain
-            src="@/assets/whiteredmini.jpg"
-          ></v-img>
-        </v-row>
-        <v-row class="text-lg-h5 text-center" justify="center"
-          >Retro Modern Aesthetic</v-row
-        >
-        <v-row class="pt-8 text-body-2 text-center">
-          The Classic Mini is one of the most recognizable vehicles in history
-          with available add-ons such as rally inspired fog-lights, wide wheel
-          fenders and racing stripes. Keeping with the classic look of chrome,
-          the aesthetic of the Classic Mini turns heads no matter the
-          configuration.
-        </v-row>
-      </v-col>
-      <v-col class="col-lg-2"></v-col>
-      <v-col class="col-sm-12 col-xs-12 col-lg-2 col-xl-2 col-md-12 ">
-        <v-row>
-          <v-img
-            class="right-image"
-            contain
-            src="@/assets/citycarmini.jpg"
-          ></v-img>
-        </v-row>
-        <v-row class="text-lg-h5 text-center" justify="center"
-          >The Spirit of Driving</v-row
-        >
-        <v-row class="pt-8 text-body-2" justify="center">
-          Paying homage to the raw and mechanical driving feel of the Classic
-          Mini. From the un-conventional driving position, to the lack of
-          eletronics that come with the territory, are some of the primary
-          reasons the Classic Mini reigns surpreme even till this day.
-        </v-row>
-      </v-col>
-      <v-col class="col-lg-1 "></v-col>
-    </v-row>
   </v-container>
 </template>
 
 <script>
 export default {
   name: "TheCar",
-  data() {
-    return {
-      slidestext: [
-        "Nimble but Extremely Fun",
-        "Retro Modern Aesthetic",
-        "The Spirit of Driving"
-      ],
-      slideimages: [
-        {
-          src: "@/assets/classic-mini.jpg"
-        },
-        {
-          src: "@/assets/whiteredmini.jpg"
-        },
-        {
-          src: "@/assets/citycarmini.jpg"
-        }
-      ]
-    };
-  }
+  data: () => ({
+    cards: [
+      { title: "Light and Nimble", src: "flexmini1.jpg" },
+      { title: "Retro Modern Aesthetic", src: "flexmini2.jpg" },
+      { title: "Spirited Driving", src: "flexmini3.jpg" }
+    ]
+  })
 };
 </script>
 
