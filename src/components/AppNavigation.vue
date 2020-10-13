@@ -1,8 +1,11 @@
 <template>
-  <v-toolbar desne flat>
+  <v-toolbar flat>
     <v-app-bar-nav-icon></v-app-bar-nav-icon>
-    <v-toolbar-title>{{appTitle}}</v-toolbar-title>
+    <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
     <v-spacer></v-spacer>
+    <v-tabs right>
+      <v-tab>Item</v-tab>
+    </v-tabs>
     <v-btn icon to="/thecar">
       <v-icon>mdi-car</v-icon>
     </v-btn>
@@ -19,7 +22,6 @@ export default {
     return {
       appTitle: "Mini",
       drawer: false,
-      expandOnHover: false,
       items: []
     };
   }

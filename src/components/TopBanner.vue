@@ -1,19 +1,17 @@
 <template>
   <v-container class="container">
     <div
-      class="pt-lg-16 pb-lg-16 text-lg-h3 text-xl-h3 text-md-h3 text-sm-h3 text-h5 text-center font-weight-light text-decoration-underline"
+      class="pt-lg-8 pb-lg-8 pb-sm-4 pb-md-8 text-lg-h3 text-xl-h3 text-md-h3 text-sm-h3 text-h5 text-center font-weight-light text-decoration-underline"
       align-content="center"
       justify-content="center"
     >
-      What's So Special?
+      {{ maintitle }}
     </div>
     <div
       class="text-xs-caption text-sm-caption text-md-subtitle-1 text-lg-subtitle-1 text-xl-subtitle-1 text-center"
       align-self="center"
     >
-      For over 60 years, Mini has remained as one of the most iconic vehicles in
-      automobile history. With multiple motor configurations and chassis
-      versions, Mini is easily one of the most recognizable brands in the world.
+      {{ subtitle }}
     </div>
     <v-container>
       <v-row
@@ -44,7 +42,7 @@
 
 <script>
 export default {
-  name: "TheCar",
+  name: "thecar",
   data: () => ({
     cards: [
       {
@@ -55,14 +53,17 @@ export default {
       {
         title: "Retro Modern Aesthetic",
         src: "flexmini2.jpg",
-        blurb: "Sought after collectors car."
+        blurb: "Stylish, even for the modern standard."
       },
       {
         title: "Spirited Driving",
         src: "flexmini3.jpg",
         blurb: "Go-kart Weekends?"
       }
-    ]
+    ],
+    maintitle: "What's So Special?",
+    subtitle:
+      "For over 60 years, Mini has remained as one of the most iconic vehicles in automobile history. With multiple motor configurations and chassis versions, Mini is easily one of the most recognizable brands in the world."
   })
 };
 </script>
@@ -75,7 +76,7 @@ export default {
   justify-self: center;
 }
 
-.body{
+.body {
   background-color: black;
 }
 .container {

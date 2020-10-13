@@ -1,16 +1,17 @@
 <template>
-  <v-container fluid>
-    <v-layout>
-    
-    </v-layout>
-  </v-container>
+  <span>
+    <types></types>
+  </span>
 </template>
 
 <script>
+import Types from "@/components/Types.vue";
+
 export default {
   name: "Variations",
-  data() {
-    return {};
+  components: {
+    Types
+   
   }
 };
 </script>

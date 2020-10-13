@@ -72,7 +72,7 @@ export default {
 
   .herotext {
     text-align: center;
-    padding-top: 25vh;
+    padding-top: 5vh;
   }
 }
 </style>
