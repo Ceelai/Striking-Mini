@@ -27,11 +27,18 @@
             <v-img
               :src="require(`@/assets/${card.src}`)"
               class="white--text align-end rounded"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.7)"
               height="400px"
             >
-              <v-card-title v-text="card.title"></v-card-title>
-              <v-card-text v-text="card.blurb" class="caption"></v-card-text>
+              <v-card-title class="" v-text="card.title"></v-card-title>
+              <v-card-text
+                v-text="card.blurb"
+                class="caption pb-0"
+              ></v-card-text>
+              <v-card-subtitle
+                v-text="card.subtitle"
+                class="white--text pt-0 caption"
+              ></v-card-subtitle>
             </v-img>
           </v-card>
         </v-col>
@@ -48,17 +55,22 @@ export default {
       {
         title: "Light and Nimble",
         src: "flexmini1.jpg",
-        blurb: "Weighting between 1200 & 1800 lbs. Look how short it is!"
+        blurb: "Weighting between 1200 & 1800 lbs. Look how short it is!",
+        subtitle:
+          "Combining tyres at the 4 corners and it's weight, creates an unforgettable experience."
       },
       {
         title: "Retro Modern Aesthetic",
         src: "flexmini2.jpg",
-        blurb: "Stylish, even for the modern standard."
+        blurb: "Stylish, even for the modern standard.",
+        subtitle:
+          "Many Mini's seldom came with modern comforts. That just means you can focus on driving."
       },
       {
         title: "Spirited Driving",
         src: "flexmini3.jpg",
-        blurb: "Go-kart Weekends?"
+        blurb: "Go-kart Weekends?",
+        subtitle: "No matter what, the experience is the most important part."
       }
     ],
     maintitle: "What's So Special?",
