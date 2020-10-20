@@ -64,7 +64,7 @@ export default {
         src: "flexmini2.jpg",
         blurb: "Stylish, even for the modern standard.",
         subtitle:
-          "Many Mini's seldom came with modern comforts. That just means you can focus on driving."
+          "Many Mini's rarely came with modern comforts. That just means you can focus on driving."
       },
       {
         title: "Spirited Driving",

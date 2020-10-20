@@ -26,13 +26,7 @@
       <v-col
         class="flex-column mobile-hide landing-right col-lg-6 col-xl-6 col-md-6 col-sm-6"
       >
-        <transition appear name="fade-in">
-          <v-img
-            class="landing-image"
-            contain
-            src="../assets/mini1.jpg"
-          ></v-img>
-        </transition>
+        <v-img class="landing-image" contain src="../assets/mini1.jpg"></v-img>
       </v-col>
     </v-row>
   </v-container>
@@ -69,23 +63,6 @@ export default {
 
 .landing-image {
   max-height: 50vh;
-}
-
-.fade-in {
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-}
-
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @media only screen and (max-width: 600px) {
