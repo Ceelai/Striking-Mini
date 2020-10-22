@@ -23,21 +23,23 @@
       </div>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer" />
     </v-app-bar>
+    <home-drawer v-model="drawer" :tabs ="tabs" />
   </div>
 </template>
 
 <script>
 export default {
   name: "AppNavigation",
-  props: {},
-  data() {
-    return {
-      appTitle: "Mini",
-      drawer: null,
-      isActive: false,
-      tabs: ["Home", "TheCar", "Variations"]
-    };
+  components: {
+    HomeDrawer: () => import("./Drawer")
   },
+  props: {},
+  data: () => ({
+    appTitle: "Mini",
+    drawer: null,
+    isActive: false,
+    tabs: ["Home", "TheCar"],
+  }),
   methods: {},
   mounted() {}
 };

@@ -5,7 +5,6 @@
   </span>
 </template>
 
-
 <script>
 // @ is an alias to /src
 import TopBanner from "@/components/TopBanner.vue";
