@@ -11,9 +11,9 @@
             :key="i"
             :to="{ name }"
             :exact="name === 'Home'"
-            :ripple="false"
+            :ripple="true"
             active-class="text--primary"
-            class="font-weight-bold"
+            class="font-weight-400"
             min-width="75"
             text
           >
@@ -23,7 +23,7 @@
       </div>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer" />
     </v-app-bar>
-    <home-drawer v-model="drawer" :tabs ="tabs" />
+    <home-drawer v-model="drawer" :tabs="tabs" />
   </div>
 </template>
 
