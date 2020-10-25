@@ -38,7 +38,7 @@ export default {
     appTitle: "Mini",
     drawer: null,
     isActive: false,
-    tabs: ["Home", "TheCar"],
+    tabs: ["Home", "TheCar"]
   }),
   methods: {},
   mounted() {}
