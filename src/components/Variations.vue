@@ -1,8 +1,8 @@
-<template>
-  <v-container>
-    <v-row class="hidden-md-and-down">
+<template class="">
+  <v-container class="grey lighten-4">
+    <v-row class="grey lighten-4">
       <!-- add animations for smoother transition -->
-      <v-col class="col-xl-4 col-lg-4 offset-xl-2 offset-lg-2">
+      <v-col class="col-lg-4 col-xl-4 offset-xl-4 offset-lg-4">
         <div>
           <v-carousel
             v-model="model"
@@ -18,17 +18,13 @@
               transition="fade-transition"
               reverse-transition="fade-transition"
               contain
+              
             >
+              <v-row class="fill-height pt-4" align="start" justify="center">
+                <div class="text-h4 black--text"> {{slide.title}} </div>
+              </v-row>
             </v-carousel-item>
           </v-carousel>
-        </div>
-      </v-col>
-      <v-col class="col-lg-4 col-xl-4 offset-xl-2 offset-lg-2">
-        <div>
-          {{ slide.title }}
-        </div>
-        <div>
-          {{ slide.description }}
         </div>
       </v-col>
     </v-row>
@@ -39,45 +35,46 @@
 export default {
   data: () => ({
     maintitle: "Variations of the Mini",
+    model: 0,
     imageCarousel: [
       {
-        title: "Mark I Mini",
         src: "Mk1Mini.jpg",
+        title: "Mark I Mini",
         description: ""
       },
       {
-        title: "Monte Carlo Mini",
         src: "montecarlomini.jpg",
+        title: "Monte Carlo Mini",
         description: ""
       },
       {
-        title: "Mark III Mini",
         src: "Mk3.jpg",
+        title: "Mark III Mini",
         description: ""
       },
       {
-        title: "Mark IV Mini",
         src: "Mk5.jpg",
+        title: "Mark IV Mini",
         description: ""
       },
       {
-        title: "Mini Van",
         src: "minivan.jpg",
+        title: "Mini Van",
         description: ""
       },
       {
-        title: "Mini Pickup",
         src: "minipickup.jpg",
+        title: "Mini Pickup",
         description: ""
       },
       {
-        title: "Mini Countryman (Woody)",
         src: "woody.jpg",
+        title: "Mini Countryman (Woody)",
         description: ""
       },
       {
-        title: "Mini Cooper w/ Sportspack",
         src: "Sportspack.jpg",
+        title: "Mini Cooper w/ Sportspack",
         description: ""
       }
     ]
