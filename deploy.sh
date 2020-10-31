@@ -9,9 +9,14 @@ npm run build
 # navigate into the build output directory
 cd dist
 
+# if you are deploying to a custom domain
+echo 'calvinlai.page' > CNAME
+
 git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:Ceelai/Striking-Mini.git master:gh-pages
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:ceelai/striking-mini.git master:gh-pages
+
 cd -
