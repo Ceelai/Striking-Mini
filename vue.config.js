@@ -1,4 +1,4 @@
 module.exports = {
   transpileDependencies: ["vuetify"],
-  publicPath: '/Striking-Mini/'
+  publicPath: process.env.NODE_ENV === "production" ? "/Striking-Mini/" : "/"
 };
