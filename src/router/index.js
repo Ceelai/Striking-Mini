@@ -19,7 +19,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: "history",
-  base: process.env.BASE_URL === "production" ? "/Striking-Mini" : "",
+  base: process.env.BASE_URL,
   routes
 });
 
