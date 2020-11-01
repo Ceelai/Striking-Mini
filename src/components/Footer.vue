@@ -2,8 +2,8 @@
   <v-footer padless>
     <v-row justify="center" no-gutters>
       <strong class="align-self-center"
-        >Thanks to Steveson Motor Co for the Images! -</strong
-      >
+        >Thanks to Steveston Motor Co for the Images! -
+      </strong>
       <v-btn
         v-for="link in links"
         :key="link"
