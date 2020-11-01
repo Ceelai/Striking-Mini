@@ -20,7 +20,7 @@
           <v-btn
             class="mt-3 justify-center align-center"
             max-width="150px"
-            href="thecar"
+            href="TheCar"
             small
             >Learn More</v-btn
           >
